@@ -3,6 +3,7 @@ from setuptools import setup
 from os import path
 
 if __name__ == '__main__':
+    toplevel_dir = path.split(path.abspath(__file__))[0]
     setup(
         name='aiida',
         url='http://aiida.net/',
@@ -16,7 +17,7 @@ if __name__ == '__main__':
         ],
         version='0.8.0rc0',
         install_requires=[
-            'aiida>=0.7.1'
+            'aiida-core>=0.7.1'
         ],
-        long_description=open(path.join(aiida_folder, 'README.rst')).read(),
+        long_description=open(path.join(toplevel_dir, 'README.rst')).read(),
     )
