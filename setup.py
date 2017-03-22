@@ -15,9 +15,9 @@ if __name__ == '__main__':
             'Programming Language :: Python',
             'Programming Language :: Python :: 2',
         ],
-        version='0.8.0rc0',
+        version='0.8.0rc1',
         install_requires=[
-            'aiida-core>=0.7.1'
+            'aiida-core>=0.8.0rc1'
         ],
         long_description=open(path.join(toplevel_dir, 'README.rst')).read(),
     )
