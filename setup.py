@@ -1,23 +1,14 @@
 # -*- coding: utf8 -*-
-from setuptools import setup
-from os import path
+from setuptools import setup, find_packages
+import json
+
 
 if __name__ == '__main__':
-    toplevel_dir = path.split(path.abspath(__file__))[0]
+    with open('setup.json', 'r') as info:
+        kwargs = json.load(info)
     setup(
-        name='aiida',
-        url='http://aiida.net/',
-        license='MIT License',
-        author='The AiiDA team',
-        author_email='developers@aiida.net',
-        classifiers=[
-            'License :: OSI Approved :: MIT License',
-            'Programming Language :: Python',
-            'Programming Language :: Python :: 2',
-        ],
-        version='0.9.1',
-        install_requires=[
-            'aiida-core==0.9.1'
-        ],
-        long_description=open(path.join(toplevel_dir, 'README.rst')).read(),
+        include_package_data=True,
+        reentry_register=True,
+        packages=find_packages(),
+        **kwargs
     )
