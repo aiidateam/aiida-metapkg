@@ -8,7 +8,7 @@
     ], 
     "description": "AiiDA: an automated interactive infrastructure and database for computational science", 
     "install_requires": [
-        "aiida-core==0.10.1", 
+        "aiida-core==0.11.0", 
         "aiida-ase>=1.0.1", 
         "aiida-codtools>=1.0.1", 
         "aiida-nwchem>=1.0.1", 
@@ -17,5 +17,5 @@
     "license": "MIT License", 
     "name": "aiida", 
     "url": "http://aiida.net", 
-    "version": "0.10.1"
+    "version": "0.11.0"
 }
