@@ -3,8 +3,7 @@
     "author_email": "developers@aiida.net", 
     "classifiers": [
         "License :: OSI Approved :: MIT License", 
-        "Programming Language :: Python :: 2.7", 
-        "Development Status :: 4 - Beta"
+        "Programming Language :: Python :: 2"
     ], 
     "description": "AiiDA: an automated interactive infrastructure and database for computational science", 
     "install_requires": [
