@@ -53,5 +53,4 @@ Science Foundation](<http://www.snf.ch/en>), as well as by the [MaX
 European Centre of Excellence](<http://www.max-centre.eu/>) funded by
 the Horizon 2020 EINFRA-5 program, Grant No. 676598.
 
-<img src="logos/MARVEL.png" alt="MARVEL" height="50"/>
-<img src="logos/MaX.png" alt="MaX" height="50"/>
+<img src="logos/MARVEL.png" alt="MARVEL" height="50"/><img src="logos/MaX.png" alt="MaX" height="50"/>
