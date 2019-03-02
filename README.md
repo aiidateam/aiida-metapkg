@@ -1,10 +1,7 @@
 [![Build Status](https://travis-ci.org/aiidateam/aiida-metakpg.svg?branch=master)](https://travis-ci.org/aiidateam/aiida-metapkg)
 [![PyPI version](https://badge.fury.io/py/aiida.svg)](https://badge.fury.io/py/aiida)
 
-AiiDA
-=====
-
-![AiiDA](logos/AiiDA_transparent_logo.png)
+![AiiDA](logos/AiiDA_transparent_logo.png){:height="75px"}
 
 **Automated Interactive Infrastructure and Database for Computational
 Science**
@@ -20,14 +17,11 @@ of simulations.
 
 For instructions on how to install AiiDA, see the [documentation](http://aiida-core.readthedocs.io).
 
-Metapackage
------------
+## Metapackage
 
-This repository contains the official **metapackage** of AiiDA, which 
-serves as a shortcut to install the `aiida-core` package, as
-well as the four original plugins `aiida-quantumespresso`, `aiida-ase`,
-`aiida-codtools` and `aiida-nwchem`. 
-The official repositories for each of these packages can be found here:
+This repository contains the official **metapackage** of AiiDA, which
+serves as a shortcut to install both the core framework alongside a few
+useful plugins:
 
 - [aiida-core](https://github.com/aiidateam/aiida_core)
 - [aiida-quantumespresso](https://github.com/aiidateam/aiida-quantumespresso)
@@ -36,8 +30,7 @@ The official repositories for each of these packages can be found here:
 - [aiida-codtools](https://github.com/aiidateam/aiida-codtools)
 
 
-How to cite AiiDA
------------------
+## How to cite AiiDA
 
 If you use AiiDA in your research, please consider citing the following
 work:
@@ -48,13 +41,11 @@ work:
 > (2016); <http://dx.doi.org/10.1016/j.commatsci.2015.09.013>;
 > <http://www.aiida.net>.
 
-License
--------
+## License
 
 The terms of the AiiDA license can be found in the LICENSE.txt file.
 
-Acknowledgements
-----------------
+## Acknowledgements
 
 This work is supported by the [MARVEL National Centre for Competency in
 Research](<http://nccr-marvel.ch>) funded by the [Swiss National
@@ -62,5 +53,5 @@ Science Foundation](<http://www.snf.ch/en>), as well as by the [MaX
 European Centre of Excellence](<http://www.max-centre.eu/>) funded by
 the Horizon 2020 EINFRA-5 program, Grant No. 676598.
 
-![MARVEL](logos/MARVEL.png)
-![MaX](logos/MaX.png)
+![MARVEL](logos/MARVEL.png){:height="50px"}
+![MaX](logos/MaX.png){:height="50px"}
