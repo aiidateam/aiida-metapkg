@@ -1,5 +1,6 @@
 # -*- coding: utf8 -*-
 from setuptools import setup, find_packages
+from os import path
 import json
 
 if __name__ == '__main__':

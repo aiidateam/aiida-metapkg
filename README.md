@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/aiidateam/aiida-metakpg.svg?branch=master)](https://travis-ci.org/aiidateam/aiida-metapkg)
 [![PyPI version](https://badge.fury.io/py/aiida.svg)](https://badge.fury.io/py/aiida)
 
-![AiiDA](logos/AiiDA_transparent_logo.png){:height="75px"}
+<img src="logos/AiiDA_transparent_logo.png" alt="AiiDA" height="75"/>
 
 **Automated Interactive Infrastructure and Database for Computational
 Science**
@@ -53,5 +53,5 @@ Science Foundation](<http://www.snf.ch/en>), as well as by the [MaX
 European Centre of Excellence](<http://www.max-centre.eu/>) funded by
 the Horizon 2020 EINFRA-5 program, Grant No. 676598.
 
-![MARVEL](logos/MARVEL.png){:height="50px"}
-![MaX](logos/MaX.png){:height="50px"}
+<img src="logos/MARVEL.png" alt="MARVEL" height="50"/>
+<img src="logos/MaX.png" alt="MaX" height="50"/>
