@@ -14,4 +14,4 @@ install:
 
 script:
 - python -c "import aiida"
-- verdi help
+- verdi
