@@ -23,10 +23,8 @@ This repository contains the official **metapackage** of AiiDA, which
 serves as a shortcut to install both the core framework alongside a few
 useful plugins:
 
-- [aiida-core](https://github.com/aiidateam/aiida_core)
+- [aiida-core](https://github.com/aiidateam/aiida-core)
 - [aiida-quantumespresso](https://github.com/aiidateam/aiida-quantumespresso)
-- [aiida-nwchem](https://github.com/aiidateam/aiida-nwchem)
-- [aiida-ase](https://github.com/aiidateam/aiida-ase)
 - [aiida-codtools](https://github.com/aiidateam/aiida-codtools)
 
 
