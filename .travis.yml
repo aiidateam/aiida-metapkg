@@ -39,7 +39,7 @@ jobs:
               skip_existing: true
               username: aiida-bot
               password:
-                  secure: X8t5vZDlKc/kRBxkUao5Mpc0AAXGBCwVOpAJrKxr5BApxK5OPRwX5EJI7kMlPGJVW1FXaw40ZGrOnxce3e9ixC4QlSYrZSQUrHf/eAklT61OhOwA/L05kUdnFfmdpcttsdt3qThYc0G6vsqLAo5aFxpJgwnh6O/ng3hU8NcP3Pknh2CggQZbEUpJL4h/QFCzwBO6ojO6nFBBd8JYdwrnsBAqSacRzDs43qX2L/+rqZTNpMKoGClorxW7egfLESwTqBWNWRHbI56l1Mu1AL4lOTitOg6L5r+BYV3Iq3qlprGUjrPviTfmHdUCpw+6oNj4Bsc5ZINNkWLm0bH06H38TToN7qdD0F8x8ZIdOSR4FOzG/rQtIelN2t64l4ib3FF0DVCLNmfyLncw2X66RBMO4NkrNVhEXoMVNVKzcdLTFViAJnUR0qyOyDaEwV6oSPZ3tYitFs4qXktCtll6oMe2Jon+szjWANZTnp4fmtWHUfith2kM9Z4BYrAdZqGjdcxI7PPCDUC4XU3M9MpzoQurQt1VgFUr+YdcZmkEvzKnzSTOO/ivunZBYpHW2yRJYfnWy4McviN+CaVWeXKlYBb6MP2GuiDJpVV9/B8OBWQesF0rRGVBsZsXWvDVnJRTcsO0SgGvT/wnCZ45dIMqFqlvxZ2LUDG/fdMRsC8e9CkZHAs=
+                  secure: "FvpMLP4PrNM2t2t+G3Y3y65tqsxBgnWgdCYEsUzv0on1cRWLwVNMtEaOR3t2yy/YPfe6+rSA/D5/MDb/rbjLVDZIFWZJQPoTSYhBiscA8zp0p8AxiArNRzXp2MstQun2Y6roNYEqhQz39a+i8xDm44YKGDH0rONLH/Fav7OPqJhTXmFgKuw6f2t/Vo5g/FS+AsuesV0kFLSa39gUTB4Pea26G/HamofRuW0/xm8vorgCQ+ukY8dl8Syoy2VSBVpnZV2BvVc92RVXo2nMrvE54j4qNq1J09MncQnkmkjgO1nx1/D5L6INHOhxaVG+l/wF+yKOPMfv1KHUBI1sG9e3qELeKlMgG27FZIxPSkn/EHThUR0zA3GJu30WQ73Pkq4+wdUEzPa2g6ngz6ryCQ2iunssc/3IN+1bIssMieDhTWm6qtshR/HK6hvFLBwhO0gJ4+DQyjArXc6GxiRsLxII4LDKTK7asHp3W6EbaxDbgJjRc3BaTKQF3LVgrOrlWhoZgZNk7EArUXVcZbIUd7W+itNgPKjWTGsXl3+Ixvb+peASkHglM51ZhI3tlod9eXoO8Ms2Y+XDYbg44s+D3onRXTY5wPQjaaghRdGB6vUs1rR+Ac4WrM2xC3CFHcdAXIMjiYMoREHzf86jA1d+k1PePOiABMDq+ptPpJx/StYd2vU="
               on:
                   repo: aiidateam/aiida-metapkg
                   all_branches: true
