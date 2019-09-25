@@ -7,10 +7,11 @@
     ], 
     "description": "AiiDA: an automated interactive infrastructure and database for computational science", 
     "install_requires": [
-        "aiida-core[rest,atomic_tools,notebook]==1.0.0b3"
+        "aiida-core[rest,atomic_tools,notebook]==1.0.0b6",
+        "aiida-quantumespresso==3.0.0a5"
     ], 
     "license": "MIT License", 
     "name": "aiida", 
     "url": "http://aiida.net", 
-    "version": "1.0.0b3"
+    "version": "1.0.0b6"
 }

@@ -1,6 +1,7 @@
 language: python
 python:
 - "2.7"
+- "3.6"
 
 cache: pip
 
@@ -14,4 +15,32 @@ install:
 
 script:
 - python -c "import aiida"
-- verdi
+- verdi -h
+
+jobs:
+    include:
+        - stage: deploy
+          if: "tag =~ ^v[0-9]+\\.[0-9]+\\.[0-9]+(a|b|rc)?[0-9]*$"
+          services: ignore
+          addons: skip
+          python: 3.6
+          before_install: skip
+          install: skip
+          before_script: skip
+          script: skip
+          env: ignore
+          before_deploy:
+            - echo "We'll deploy $TRAVIS_TAG"
+          after_deploy:
+            - echo "Deployed $TRAVIS_TAG"
+            - echo "Could hook up further triggers here."
+          deploy: &pypi
+              provider: pypi
+              skip_existing: true
+              username: aiida-bot
+              password:
+                  secure: X8t5vZDlKc/kRBxkUao5Mpc0AAXGBCwVOpAJrKxr5BApxK5OPRwX5EJI7kMlPGJVW1FXaw40ZGrOnxce3e9ixC4QlSYrZSQUrHf/eAklT61OhOwA/L05kUdnFfmdpcttsdt3qThYc0G6vsqLAo5aFxpJgwnh6O/ng3hU8NcP3Pknh2CggQZbEUpJL4h/QFCzwBO6ojO6nFBBd8JYdwrnsBAqSacRzDs43qX2L/+rqZTNpMKoGClorxW7egfLESwTqBWNWRHbI56l1Mu1AL4lOTitOg6L5r+BYV3Iq3qlprGUjrPviTfmHdUCpw+6oNj4Bsc5ZINNkWLm0bH06H38TToN7qdD0F8x8ZIdOSR4FOzG/rQtIelN2t64l4ib3FF0DVCLNmfyLncw2X66RBMO4NkrNVhEXoMVNVKzcdLTFViAJnUR0qyOyDaEwV6oSPZ3tYitFs4qXktCtll6oMe2Jon+szjWANZTnp4fmtWHUfith2kM9Z4BYrAdZqGjdcxI7PPCDUC4XU3M9MpzoQurQt1VgFUr+YdcZmkEvzKnzSTOO/ivunZBYpHW2yRJYfnWy4McviN+CaVWeXKlYBb6MP2GuiDJpVV9/B8OBWQesF0rRGVBsZsXWvDVnJRTcsO0SgGvT/wnCZ45dIMqFqlvxZ2LUDG/fdMRsC8e9CkZHAs=
+              on:
+                  repo: aiidateam/aiida-metapkg
+                  all_branches: true
+                  tags: true
