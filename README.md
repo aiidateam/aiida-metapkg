@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/aiidateam/aiida-metakpg.svg?branch=master)](https://travis-ci.org/aiidateam/aiida-metapkg)
+[![Build Status](https://travis-ci.org/aiidateam/aiida-metapkg.svg?branch=master)](https://travis-ci.org/aiidateam/aiida-metapkg)
 [![PyPI version](https://badge.fury.io/py/aiida.svg)](https://badge.fury.io/py/aiida)
 
 <img src="logos/AiiDA_transparent_logo.png" alt="AiiDA" height="75"/>
