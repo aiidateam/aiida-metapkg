@@ -12,7 +12,6 @@ if __name__ == '__main__':
 
     setup(
         include_package_data=True,
-        reentry_register=True,
         packages=find_packages(),
         long_description=open(path.join(THIS_FOLDER, 'README.md')).read(),
         long_description_content_type='text/markdown',
