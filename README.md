@@ -1,24 +1,12 @@
-[![Build Status](https://travis-ci.org/aiidateam/aiida-metapkg.svg?branch=master)](https://travis-ci.org/aiidateam/aiida-metapkg)
-
-# <img src="logos/AiiDA_transparent_logo.png" alt="AiiDA" width=200/>
-
-**Automated Interactive Infrastructure and Database for Computational
-Science**
+# <img src="http://www.aiida.net/wp-content/uploads/2020/06/logo_aiida.png" alt="AiiDA" width="200"/>
 
 AiiDA (www.aiida.net) is a workflow manager for computational science with a strong focus on provenance, performance and extensibility.
 
-## Metapackage
+## Deprecated
 
-The `aiida` package is an alias for the `aiida-core` package, which contains the actual implementation.
-
-Please see the  [`aiida-core`](https://github.com/aiidateam/aiida-core) repository for any further information on AiiDA.
+This metapackage for AiiDA has been deprecated as of v1.0 and is no longer being maintained.
+If you want to install AiiDA, please install the [`aiida-core` package](https://pypi.org/project/aiida-core/) instead.
 
 ## Acknowledgements
 
-This work is supported by the [MARVEL National Centre for Competency in
-Research](<http://nccr-marvel.ch>) funded by the [Swiss National
-Science Foundation](<http://www.snf.ch/en>), as well as by the [MaX
-European Centre of Excellence](<http://www.max-centre.eu/>) funded by
-the Horizon 2020 EINFRA-5 program, Grant No. 676598.
-
-<img src="logos/MARVEL.png" alt="MARVEL" height="50"/><img src="logos/MaX.png" alt="MaX" height="50"/>
+AiiDA is a [NumFOCUS Affiliated Project](https://www.numfocus.org) and supported by the [MARVEL National Centre of Competence in Research](http://www.marvel-nccr.ch), the [MaX European Centre of Excellence](http://www.max-centre.eu) and by a number of other supporting projects, partners and institutions, whose complete list is available on the [AiiDA website acknowledgements page](http://www.aiida.net/acknowledgements/).
