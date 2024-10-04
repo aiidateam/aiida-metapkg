@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /projects/aiida-core/en/stable/
+Disallow: /

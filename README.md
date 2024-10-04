@@ -1,4 +1,7 @@
-# <img src="http://www.aiida.net/wp-content/uploads/2020/06/logo_aiida.png" alt="AiiDA" width="200"/>
+
+### NOTE: This package is deprecated, except for currently being used as the main AiiDA readthedocs project.
+
+# AIIDA Meta-package
 
 AiiDA (www.aiida.net) is a workflow manager for computational science with a strong focus on provenance, performance and extensibility.
 
