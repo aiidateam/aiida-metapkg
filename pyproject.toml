@@ -1,0 +1,37 @@
+[build-system]
+build-backend = 'flit_core.buildapi'
+requires = ['flit_core >=3.4,<4']
+
+[project]
+authors = [{name = 'The AiiDA team', email = 'developers@aiida.net'}]
+classifiers = [
+  'Development Status :: 5 - Production/Stable',
+  'Framework :: AiiDA',
+  'License :: OSI Approved :: MIT License',
+  'Operating System :: POSIX :: Linux',
+  'Operating System :: MacOS :: MacOS X',
+  'Programming Language :: Python',
+  'Programming Language :: Python :: 3.9',
+  'Programming Language :: Python :: 3.10',
+  'Programming Language :: Python :: 3.11',
+  'Programming Language :: Python :: 3.12',
+  'Programming Language :: Python :: 3.13',
+  'Topic :: Scientific/Engineering'
+]
+dependencies = [
+  'aiida-core~=2.5'
+  'aiida-workgraph~=0.5'
+]
+description = 'AiiDA metapackage.'
+version = "2.0"
+keywords = ['aiida', 'workflows']
+license = {file = 'LICENSE.txt'}
+name = 'aiida-core'
+readme = 'README.md'
+requires-python = '>=3.9'
+
+[project.urls]
+Changelog = 'https://github.com/aiidateam/aiida/blob/main/CHANGELOG.md'
+Documentation = 'https://aiida.readthedocs.io'
+Home = 'http://www.aiida.net/'
+Source = 'https://github.com/aiidateam/aiida-core'

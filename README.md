@@ -1,14 +1,6 @@
-
-### NOTE: This package is deprecated, except for currently being used as the main AiiDA readthedocs project.
-
 # AIIDA Meta-package
 
-AiiDA (www.aiida.net) is a workflow manager for computational science with a strong focus on provenance, performance and extensibility.
-
-## Deprecated
-
-This metapackage for AiiDA has been deprecated as of v1.0 and is no longer being maintained.
-If you want to install AiiDA, please install the [`aiida-core` package](https://pypi.org/project/aiida-core/) instead.
+AiiDA (www.aiida.net) is a workflow manager for computational science with a strong focus on provenance, performance and extensibility. It includes `aiida-core` and `aiida-workgraph`.
 
 ## Acknowledgements
 
