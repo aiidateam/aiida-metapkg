@@ -1,6 +1,6 @@
 # AIIDA Meta-package
 
-AiiDA (www.aiida.net) is a workflow manager for computational science with a strong focus on provenance, performance and extensibility. It includes `aiida-core` and `aiida-workgraph`.
+AiiDA (www.aiida.net) is a workflow manager for computational science with a strong focus on provenance, performance and extensibility. It includes `aiida-core` and `aiida-workgraph` ... TODO (more).
 
 ## Acknowledgements
 
