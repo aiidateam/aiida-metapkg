@@ -1,37 +1,45 @@
 name: release
+  # This workflow uses actions that are not certified by GitHub.
+  # They are provided by a third-party and are governed by
+  # separate terms of service, privacy policy, and support
+  # documentation.
+  # # 
+  jobs:
+    release-build:
+      runs-on: ubuntu-latest
 
-# Automate deployment to PyPI when creating a release tag vX.Y.Z
-# will only be published to PyPI if the git tag matches the release version
-# and the pre-commit and tests pass
+      steps:
+        - uses: actions/checkout@v5
 
-on:
-  push:
+        - uses: actions/setup-python@v5
+          with:
+            python-version: "3.x"
 
-env:
-  FORCE_COLOR: 1
+        - name: build release distributions
+          run: |
+            hatch build
 
-jobs:
+        - name: upload windows dists
+          uses: actions/upload-artifact@v4
+          with:
+            name: release-dists
+            path: dist/
 
-  publish:
+    pypi-publish:
+      runs-on: ubuntu-latest
+      needs:
+        - release-build
+      permissions:
+        id-token: write
 
-    name: Publish to PyPI
+      steps:
+        - name: Retrieve release distributions
+          uses: actions/download-artifact@v5
+          with:
+            name: release-dists
+            path: dist/
 
-    runs-on: ubuntu-24.04
-
-    steps:
-    - name: Checkout source
-      uses: actions/checkout@v4
-    - name: Set up Python 3.9
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.9'
-    - name: install flit
-      run: |
-        pip install flit~=3.4
-    - name: Build and publish
-      run: |
-        flit publish
-      env:
-        FLIT_USERNAME: __token__
-        FLIT_PASSWORD: ${{ secrets.PYPI_KEY }}
-        FLIT_INDEX_URL: https://test.pypi.org/legacy/
+        - name: Publish release distributions to PyPI
+          uses: pypa/gh-action-pypi-publish@3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f
+          with:
+            repository-url: https://test.pypi.org/legacy/

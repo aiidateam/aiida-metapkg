@@ -1,6 +1,6 @@
 [build-system]
-build-backend = 'flit_core.buildapi'
-requires = ['flit_core >=3.4,<4']
+build-backend = 'hatchling.build'
+requires = ['hatchling']
 
 [project]
 authors = [{name = 'The AiiDA team', email = 'developers@aiida.net'}]
@@ -19,16 +19,28 @@ classifiers = [
   'Topic :: Scientific/Engineering'
 ]
 dependencies = [
-  'aiida-core',
+  'aiida-core==2.7.1',
   'aiida-workgraph',
   'aiida-shell',
-  'aiida-submission-controller',
-  'aiida-hyperqueue',
-  'aiida-project',
   'aiida-pythonjob',
 ]
+[project.optional-dependencies]
+tools = [
+  'aiida-submission-controller',
+  'aiida-project',
+]
+
+ui = [
+  'aiida-gui'
+]
+
+full = [
+  'aiida[tools,ui]',
+]
+
+
 description = 'AiiDA metapackage.'
-version = "1.1.0"
+version = "2.7.1pre0"
 keywords = ['aiida', 'workflows']
 license = {file = 'LICENSE.txt'}
 name = 'aiida'
@@ -36,7 +48,11 @@ readme = 'README.md'
 requires-python = '>=3.9'
 
 [project.urls]
-Changelog = 'https://github.com/aiidateam/aiida/blob/main/CHANGELOG.md'
 Documentation = 'https://aiida.readthedocs.io'
 Home = 'http://www.aiida.net/'
-Source = 'https://github.com/aiidateam/aiida-core'
+
+[tool.hatch.publish.index.repos.main]
+url = "https://upload.pypi.org/legacy/"
+
+[tool.hatch.publish.index.repos.test]
+url = "https://test.pypi.org/legacy/"
