@@ -1,0 +1,58 @@
+[build-system]
+build-backend = 'hatchling.build'
+requires = ['hatchling']
+
+[project]
+authors = [{name = 'The AiiDA team', email = 'developers@aiida.net'}]
+classifiers = [
+  'Development Status :: 5 - Production/Stable',
+  'Framework :: AiiDA',
+  'License :: OSI Approved :: MIT License',
+  'Operating System :: POSIX :: Linux',
+  'Operating System :: MacOS :: MacOS X',
+  'Programming Language :: Python',
+  'Programming Language :: Python :: 3.9',
+  'Programming Language :: Python :: 3.10',
+  'Programming Language :: Python :: 3.11',
+  'Programming Language :: Python :: 3.12',
+  'Programming Language :: Python :: 3.13',
+  'Topic :: Scientific/Engineering'
+]
+dependencies = [
+  'aiida-core==2.7.1',
+  'aiida-workgraph',
+  'aiida-shell',
+  'aiida-pythonjob',
+]
+[project.optional-dependencies]
+tools = [
+  'aiida-submission-controller',
+  'aiida-project',
+]
+
+ui = [
+  'aiida-gui'
+]
+
+full = [
+  'aiida[tools,ui]',
+]
+
+
+description = 'AiiDA metapackage.'
+version = "2.7.1rc0"
+keywords = ['aiida', 'workflows']
+license = {file = 'LICENSE.txt'}
+name = 'aiida'
+readme = 'README.md'
+requires-python = '>=3.9'
+
+[project.urls]
+Documentation = 'https://aiida.readthedocs.io'
+Home = 'http://www.aiida.net/'
+
+[tool.hatch.publish.index.repos.main]
+url = "https://upload.pypi.org/legacy/"
+
+[tool.hatch.publish.index.repos.test]
+url = "https://test.pypi.org/legacy/"
